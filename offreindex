@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INVI - Offres d'emploi & Services</title>
+  <style>
+    :root {
+      --jaune: #f7c400;
+      --noir: #111;
+      --blanc: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--blanc);
+      color: var(--noir);
+    }
+
+    /* HEADER */
+    header {
+      background-color: var(--noir);
+      color: var(--blanc);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: var(--jaune);
+    }
+
+    nav a {
+      color: var(--blanc);
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--jaune);
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--jaune);
+      color: var(--noir);
+      padding: 100px 40px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* SECTION RECHERCHE */
+    .search-section {
+      padding: 40px;
+      background-color: var(--blanc);
+      text-align: center;
+    }
+
+    .search-section input {
+      padding: 12px;
+      width: 250px;
+      border: 2px solid var(--noir);
+      border-radius: 6px;
+    }
+
+    .search-section button {
+      padding: 12px 20px;
+      background-color: var(--noir);
+      color: var(--blanc);
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .search-section button:hover {
+      background-color: var(--jaune);
+      color: var(--noir);
+      font-weight: bold;
+    }
+
+    /* OFFRES */
+    .offers {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .offer-card {
+      background-color: var(--blanc);
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .offer-card:hover {
+      transform: scale(1.03);
+      border-color: var(--jaune);
+    }
+
+    .offer-card h3 {
+      color: var(--noir);
+    }
+
+    .offer-card span {
+      color: var(--jaune);
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: var(--noir);
+      color: var(--blanc);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ABCD</h1>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#offres">Offres</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Bienvenue sur ABCD</h2>
+    <p>Trouvez les meilleures offres d'emploi et services de personnel en quelques clics.</p>
+  </section>
+
+  <section class="search-section">
+    <h2>Rechercher une offre</h2>
+    <input type="text" placeholder="Intitulé du poste..." />
+    <button>Rechercher</button>
+  </section>
+
+  <section id="offres" class="offers">
+    <div class="offer-card">
+      <h3>Développeur Web</h3>
+      <p><span>CDI</span> - Douala</p>
+      <p>Entreprise recherche un développeur web motivé.</p>
+    </div>
+
+    <div class="offer-card">
+      <h3>Assistant Comptable</h3>
+      <p><span>Stage</span> - Yaoundé</p>
+      <p>Assistant comptable pour cabinet réputé.</p>
+    </div>
+
+    <div class="offer-card">
+      <h3>Commercial(e)</h3>
+      <p><span>CDD</span> - Bafoussam</p>
+      <p>Recherchons un profil dynamique et motivé.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 INVI - Offres d'emploi et services. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
